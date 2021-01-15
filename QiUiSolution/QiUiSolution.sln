@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "QiUiSolution", "QiUiSolution\QiUiSolution.vcxproj", "{65F8292E-0556-445A-9010-B142D412AE8E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{65F8292E-0556-445A-9010-B142D412AE8E}.Debug|x64.ActiveCfg = Debug|x64
+		{65F8292E-0556-445A-9010-B142D412AE8E}.Debug|x64.Build.0 = Debug|x64
+		{65F8292E-0556-445A-9010-B142D412AE8E}.Debug|x86.ActiveCfg = Debug|Win32
+		{65F8292E-0556-445A-9010-B142D412AE8E}.Debug|x86.Build.0 = Debug|Win32
+		{65F8292E-0556-445A-9010-B142D412AE8E}.Release|x64.ActiveCfg = Release|x64
+		{65F8292E-0556-445A-9010-B142D412AE8E}.Release|x64.Build.0 = Release|x64
+		{65F8292E-0556-445A-9010-B142D412AE8E}.Release|x86.ActiveCfg = Release|Win32
+		{65F8292E-0556-445A-9010-B142D412AE8E}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9632F383-52BA-4AE4-B206-51B65450A80B}
+	EndGlobalSection
+EndGlobal
