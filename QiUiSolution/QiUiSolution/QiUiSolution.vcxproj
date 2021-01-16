@@ -154,6 +154,7 @@
     <ClInclude Include="QiObject.h" />
     <ClInclude Include="QiPresenter.h" />
     <ClInclude Include="QiView.h" />
+    <ClInclude Include="QiWindow.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

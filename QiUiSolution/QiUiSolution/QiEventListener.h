@@ -8,8 +8,8 @@ namespace QiUi
 		OnClickListener() {}
 		virtual	~OnClickListener() {}
 
-		virtual bool	OnClickEvent() = 0;
-		virtual	bool	OnDoubleClickEvent() = 0;
+		virtual bool	OnClickEvent() { return true; }
+		virtual	bool	OnDoubleClickEvent() { return true; }
 
 	};
 

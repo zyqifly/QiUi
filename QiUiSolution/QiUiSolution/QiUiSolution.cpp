@@ -4,6 +4,7 @@
 #include <iostream>
 #include    "QiObject.h"
 #include	"QiPresenter.h"
+#include	"QiWindow.h"
 using namespace QiUi;
 
 class A : public QiObject
@@ -38,23 +39,36 @@ public:
 	{
 		std::cout << "I am B!" << std::endl;
 	}
-
+	int	setScalingMode(int mode)
+	{
+		return mode;
+	}
 private:
 
 };
 
-
+template<class S, class P>
+bool CheckBase(S s, P p)
+{
+	return std::is_base_of<P, S>::value;
+}
 int main()
 {
-	A a;
+	/*A a;
 	B b;
 	a.Connect(a.eventSignal, &b, &B::OnEventSlot);
 	a.OnEvent();
 
 	QiPresenter p;
-	p.OnClickEvent();
-	p.OnTickEvent();
-
+	bool ret = CheckBase(p, OnClickListener());
+	if (ret)
+	{
+		((OnClickListener*)(&a))->OnClickEvent();
+	}*/
+	using	namespace QiUi;
+	QiWindow window;
+	window.Create();
+	window.Show();
 	return 0;
 }
 
