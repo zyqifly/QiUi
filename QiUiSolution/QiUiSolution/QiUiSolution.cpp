@@ -74,8 +74,8 @@ int main()
 	button.SetPositon(5, 30, 100, 20);
 	edit.SetPositon(5, 5, 100, 20);
 	window.Create();
-	button.Create(window.GetHandle());
-	edit.Create(window.GetHandle());
+	button.Create(window);
+	edit.Create(window);
 	window.Show();
 	return 0;
 }

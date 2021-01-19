@@ -28,10 +28,10 @@ namespace QiUi
 		return	true;
 	}
 
-	bool	QiWidgetBase::Create(HWND handle/*QiWidgetBase& parentWidget*/)
+	bool	QiWidgetBase::Create(QiWidgetBase& parentWidget)
 	{
-		// this->parentWidget = handle;
-		this->info_.hWndParent = handle;
+		this->parentWidget = &parentWidget;
+		this->info_.hWndParent = parentWidget.handle_;
 		this->handle_ = CreateWindow(   //°´Å¥´´½¨  
 			info_.lpClassName,
 			info_.lpWindowName,

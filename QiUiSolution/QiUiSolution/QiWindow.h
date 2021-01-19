@@ -1,10 +1,11 @@
 #ifndef QI_WINDOW_H
 #define QI_WINDOW_H
 #include	<Windows.h>
+#include    "QiWidgetBase.h"
 namespace QiUi
 {
     LRESULT CALLBACK WndProc(HWND, UINT, WPARAM, LPARAM);
-    class QiWindow
+    class QiWindow : public QiWidgetBase
     {
     public:
         QiWindow();
@@ -62,11 +63,11 @@ namespace QiUi
 
     protected:
         WNDCLASS  wndclass_;
-        HWND handle_ = NULL; // ´°¿Ú¾ä±ú
     };
 
     QiWindow::QiWindow() : wndclass_(WNDCLASS())
     {
+        info_.type = QiWidgetType::Window;
     }
 
     QiWindow::~QiWindow()

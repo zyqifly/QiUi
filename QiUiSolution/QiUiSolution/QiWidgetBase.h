@@ -4,6 +4,16 @@
 #include	"QiEventListener.h"
 namespace QiUi
 {
+	enum class QiWidgetType
+	{
+		WidgetBase,
+		Button,
+		Edit,
+		Label,
+		GroupBox,
+		Window
+	};
+
 	class QiWidgetInfo
 	{
 	public:
@@ -20,6 +30,7 @@ namespace QiUi
 		HMENU hMenu = NULL;							// 窗口菜单句柄
 		HINSTANCE hInstance = NULL;					// 程序实例句柄
 		LPVOID lpParam = nullptr;					// 创建参数
+		QiWidgetType type = QiWidgetType::WidgetBase;				// 控件类型
 	private:
 
 	};
@@ -31,7 +42,7 @@ namespace QiUi
 		~QiWidgetBase();
 		virtual bool	OnTickEvent() override;
 		virtual bool	OnClickEvent() override;
-		virtual	bool	Create(HWND handle/*QiWidgetBase& parentWidget*/);
+		virtual	bool	Create(QiWidgetBase& parentWidget);
 		virtual	bool	SetPositon(int x, int y, int width, int height);
 	protected:
 		QiWidgetInfo info_;
