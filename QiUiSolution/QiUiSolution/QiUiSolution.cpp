@@ -69,13 +69,14 @@ int main()
 	}*/
 	using	namespace QiUi;
 	QiWindow window;
-	QiButton button;
+	/*QiButton button;
 	QiEdit edit;
 	button.SetPositon(5, 30, 100, 20);
 	edit.SetPositon(5, 5, 100, 20);
 	window.Create();
 	button.Create(window);
-	edit.Create(window);
+	edit.Create(window);*/
+	window.Create();
 	window.Show();
 	return 0;
 }

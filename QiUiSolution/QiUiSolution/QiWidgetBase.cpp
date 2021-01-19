@@ -62,4 +62,9 @@ namespace QiUi
 
 		return	true;
 	}
+
+	HWND	QiWidgetBase::GetHandle()
+	{
+		return	handle_;
+	}
 }

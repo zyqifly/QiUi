@@ -151,6 +151,7 @@
     <ClCompile Include="QiEdit.cpp" />
     <ClCompile Include="QiUiSolution.cpp" />
     <ClCompile Include="QiWidgetBase.cpp" />
+    <ClCompile Include="QiWidgetGroup.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="QiButton.h" />
@@ -160,6 +161,7 @@
     <ClInclude Include="QiPresenter.h" />
     <ClInclude Include="QiView.h" />
     <ClInclude Include="QiWidgetBase.h" />
+    <ClInclude Include="QiWidgetGroup.h" />
     <ClInclude Include="QiWindow.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

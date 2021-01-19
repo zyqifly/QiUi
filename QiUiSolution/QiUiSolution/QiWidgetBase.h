@@ -44,6 +44,8 @@ namespace QiUi
 		virtual bool	OnClickEvent() override;
 		virtual	bool	Create(QiWidgetBase& parentWidget);
 		virtual	bool	SetPositon(int x, int y, int width, int height);
+
+		HWND	GetHandle();
 	protected:
 		QiWidgetInfo info_;
 		QiWidgetBase* parentWidget = nullptr;
