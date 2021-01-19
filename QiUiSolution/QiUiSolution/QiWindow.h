@@ -58,6 +58,8 @@ namespace QiUi
             }
         }
 
+        HWND GetHandle() { return handle_; }
+
     protected:
         WNDCLASS  wndclass_;
         HWND handle_ = NULL; // 窗口句柄
@@ -77,8 +79,8 @@ namespace QiUi
          {
          case WM_COMMAND: // 来自菜单、快捷键或工具栏按钮的消息
          {
+             break;
          }
-         break;
          case WM_PAINT: //若是客户区重绘消息  
          {
              PAINTSTRUCT ps;

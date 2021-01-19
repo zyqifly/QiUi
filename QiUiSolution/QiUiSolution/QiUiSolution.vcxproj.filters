@@ -18,6 +18,15 @@
     <ClCompile Include="QiUiSolution.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="QiWidgetBase.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="QiButton.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="QiEdit.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="QiObject.h">
@@ -33,6 +42,15 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="QiWindow.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="QiWidgetBase.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="QiButton.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="QiEdit.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

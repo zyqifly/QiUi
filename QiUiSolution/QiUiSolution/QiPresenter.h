@@ -27,11 +27,6 @@ namespace QiUi
 			return	view_->OnClickEvent();
 		}
 
-		virtual	bool	OnDoubleClickEvent() override
-		{
-			return	true;
-		}
-
 		virtual	bool	OnSetUpView()
 		{
 			return	view_->OnSetUpView();

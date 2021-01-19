@@ -5,6 +5,8 @@
 #include    "QiObject.h"
 #include	"QiPresenter.h"
 #include	"QiWindow.h"
+#include	"QiButton.h"
+#include	"QiEdit.h"
 using namespace QiUi;
 
 class A : public QiObject
@@ -67,7 +69,13 @@ int main()
 	}*/
 	using	namespace QiUi;
 	QiWindow window;
+	QiButton button;
+	QiEdit edit;
+	button.SetPositon(5, 30, 100, 20);
+	edit.SetPositon(5, 5, 100, 20);
 	window.Create();
+	button.Create(window.GetHandle());
+	edit.Create(window.GetHandle());
 	window.Show();
 	return 0;
 }

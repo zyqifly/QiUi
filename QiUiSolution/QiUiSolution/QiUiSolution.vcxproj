@@ -147,13 +147,19 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="QiButton.cpp" />
+    <ClCompile Include="QiEdit.cpp" />
     <ClCompile Include="QiUiSolution.cpp" />
+    <ClCompile Include="QiWidgetBase.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="QiButton.h" />
+    <ClInclude Include="QiEdit.h" />
     <ClInclude Include="QiEventListener.h" />
     <ClInclude Include="QiObject.h" />
     <ClInclude Include="QiPresenter.h" />
     <ClInclude Include="QiView.h" />
+    <ClInclude Include="QiWidgetBase.h" />
     <ClInclude Include="QiWindow.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
