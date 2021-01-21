@@ -56,17 +56,11 @@ bool CheckBase(S s, P p)
 }
 int main()
 {
-	/*A a;
+	A a;
 	B b;
 	a.Connect(a.eventSignal, &b, &B::OnEventSlot);
 	a.OnEvent();
-
-	QiPresenter p;
-	bool ret = CheckBase(p, OnClickListener());
-	if (ret)
-	{
-		((OnClickListener*)(&a))->OnClickEvent();
-	}*/
+	return 1;
 	using	namespace QiUi;
 	QiWindow window;
 	/*QiButton button;

@@ -59,5 +59,8 @@
     <ClInclude Include="QiWidgetGroup.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="QiBinder.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -3,7 +3,7 @@
 #define SIGNAL public
 #include	<vector>
 #include	<functional>
-
+#include	"QiBinder.h"
 namespace QiUi
 {
 	class QiObject
@@ -20,7 +20,7 @@ namespace QiUi
 				return false;
 			}
 
-			Functor signal = std::bind(slot, reciever);
+			Functor signal = Bind(slot, reciever);
 			signalContainer.push_back(signal);
 
 			return	 true;
@@ -34,7 +34,7 @@ namespace QiUi
 				return false;
 			}
 
-			Functor signal = std::bind(slot, reciever);
+			Functor signal = Bind(slot, reciever);
 			
 			for (auto i = signalContainer.begin(); i != signalContainer.end(); i++)
 			{

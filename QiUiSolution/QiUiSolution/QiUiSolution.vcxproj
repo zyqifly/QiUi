@@ -154,6 +154,7 @@
     <ClCompile Include="QiWidgetGroup.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="QiBinder.h" />
     <ClInclude Include="QiButton.h" />
     <ClInclude Include="QiEdit.h" />
     <ClInclude Include="QiEventListener.h" />
